@@ -1,0 +1,225 @@
+$gray: rgb(48, 48, 48);
+$red: #0c0e0c;
+$wrapper: #d8323c;
+* {
+  //   background-color: $gray;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+first {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+second {
+  transition: 2s;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  display: none;
+}
+
+.wrapper {
+  background-color: $wrapper;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  h1 {
+    background-color: $wrapper;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 55px;
+    letter-spacing: 4px;
+    color: #eaebea;
+    margin: 0 auto;
+  }
+  .start {
+    border-radius: 8px;
+    border: none;
+    background: none;
+    color: #eaebea;
+    font-size: 45px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px 70px;
+  }
+  .start:hover {
+    background-color: #cf1521;
+  }
+}
+
+.wrapper-two {
+  background-color: $wrapper;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .head {
+    width: 20%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .back {
+      cursor: pointer;
+      width: auto;
+      height: 50%;
+      background: none;
+      border: none;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+  .inputArea {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    .add,
+    .clear,
+    .chose {
+      cursor: pointer;
+      border: none;
+      padding: 10px;
+      font-size: 1.7rem;
+      letter-spacing: 4px;
+      color: #eaebea;
+      background: none;
+    }
+    .buttons {
+      // margin-top: vh;
+      display: flex;
+      flex-wrap: no-wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .error {
+      // margin-bottom: 5vh;
+      text-align: center;
+      font-size: 25px;
+      visibility: hidden;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #eaebea;
+      // background-color: red;
+    }
+    .info {
+      margin-top: 10vh;
+      margin-bottom: 10%;
+      font-size: 2.3rem;
+      text-align: center;
+      color: #eaebea;
+      letter-spacing: 2px;
+    }
+    .item {
+      margin-bottom: 5vh;
+      width: 80%;
+      text-align: center;
+      padding: 10px;
+      font-size: 30px;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+  .itemsArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    // background-color: #eaebea;
+    height: 40%;
+    width: 90%;
+  }
+}
+.newItem {
+  margin: 10px 10px;
+  border-radius: 8px;
+  padding: 10px 40px;
+  font-size: 30px;
+  background-color: white;
+}
+.winBox {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #d8323c;
+  background-color: #0c0e0c;
+  position: absolute;
+  // border-radius: 8px;
+
+  .top {
+    .again {
+      border: none;
+      width: 50px;
+      height: 50px;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      background: none;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .close-box {
+      width: 50px;
+      height: 50px;
+      border: none;
+      margin-top: 2rem;
+      margin-right: 2rem;
+      background: none;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .botom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    p {
+      text-align: center;
+      font-size: 45px;
+      padding: 0 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head {
+    width: 10%;
+  }
+}

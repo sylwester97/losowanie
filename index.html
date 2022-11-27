@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/edbadc31eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <first>
+      <div class="wrapper">
+        <h1>Wylosuj zwycięzcę!</h1>
+        <button class="start">Start</button>
+      </div>
+    </first>
+    <second>
+      <div class="wrapper-two">
+        <div class="head">
+          <button class="back">
+            <img src="/icons8-back-arrow-50.png" alt="" />
+          </button>
+        </div>
+        <div class="inputArea">
+          <p class="info">Dodaj uczestników losowania!</p>
+          <input type="text" id="item" class="item" />
+          <p class="error">Musisz wpisać uczestnika!</p>
+          <!-- <textarea name="item" id="item" cols="30" rows="5"></textarea> -->
+          <div class="buttons">
+            <button class="add">Dodaj</button>
+            <button class="clear">Wyczyść</button>
+            <button class="chose">Losuj!</button>
+          </div>
+        </div>
+
+        <div class="itemsArea"></div>
+
+        <div class="winBox">
+          <div class="top">
+            <button class="again">
+              <img src="/icons8-circular-arrows-60.png" alt="" />
+            </button>
+            <button class="close-box"><img src="/icons8-cancel-50.png" alt=""></i></button>
+          </div>
+          <div class="botom">
+            <p class="winnerItem"></p>
+          </div>
+        </div>
+      </div>
+    </second>
+    <script src="js/js.js"></script>
+  </body>
+</html>
